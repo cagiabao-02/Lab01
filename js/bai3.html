@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+<body>
+    <script>
+        // Data 1
+        var dolpoint1 = 96;
+        var dolpoint2 = 108;
+        var dolpoint3 = 89;
+        var avgDol = (dolpoint1 + dolpoint2 + dolpoint3) / 3;
+
+        var koapoint1 = 88;
+        var koapoint2 = 91;
+        var koapoint3 = 110;
+        var avgKoa = (koapoint1 + koapoint2 + koapoint3) / 3;
+
+        console.log("Data 1:");
+        
+
+        var twin = (avgDol>avgKoa)?1:((avgDol<avgKoa)?2:3);
+        if(twin==1) console.log("Dolphins team is winner!");
+        else if(twin==2) console.log("Koalas team is winner!");
+        else console.log("this is a draw!");
+        
+        //Data Bonus 1
+        var dolBonus11 = 97;
+        var dolBonus12 = 112;
+        var dolBonus13 = 101;
+        var avgDolBonus1 = (dolBonus11 + dolBonus12 + dolBonus13) / 3;
+
+        var koaBonus11 = 109;
+        var koaBonus12 = 95;
+        var koaBonus13 = 123;
+        var avgKoaBonus1 = (koaBonus11 + koaBonus12 + koaBonus13) / 3;
+
+        console.log("Data Bonus 1:");
+        
+        
+        var twinb1 = (avgDolBonus1>avgKoaBonus1)?1:((avgDolBonus1<avgKoaBonus1)?2:3);
+        if(twinb1==1 && avgDolBonus1>=100) console.log("Dolphins team is winner!");
+        else if(twinb1==2 && avgKoaBonus1>=100) console.log("Koalas team is winner!");
+        else console.log("this is a draw!");
+
+
+        //Data Bonus 2
+        var dolBonus21 = 97;
+        var dolBonus22 = 112;
+        var dolBonus23 = 101;
+        var avgDolBonus2 = (dolBonus21 + dolBonus22 + dolBonus23) / 3;
+
+        var koaBonus21 = 109;
+        var koaBonus22 = 95;
+        var koaBonus23 = 106;
+        var avgKoaBonus2 = (koaBonus21 + koaBonus22 + koaBonus23) / 3;
+
+        console.log("Data Bonus 2:");
+        
+        
+        var twinb2 = (avgDolBonus2>avgKoaBonus2)?1:((avgDolBonus2<avgKoaBonus2)?2:3);
+        if(twinb2==1 && avgDolBonus2>=100) console.log("Dolphins team is winner!");
+        else if(twinb2==2 && avgKoaBonus2>=100) console.log("Koalas team is winner!");
+        else if(twinb2==3 && avgDolBonus2>=100)console.log("this is a draw!");
+        else console.log("There was no winning team!");
+        
+
+    </script>
+</body>
+</html>
